@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Personal Website</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">Yu Qing He</div>
+        <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-up">Welcome to My Website</h1>
+            <p data-aos="fade-up" data-aos-delay="200">I'm Yu Qing He, Design Researcher and Educator</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="profile-image" data-aos="fade-right">
+                    <img src="images/profile.jpg" alt="Yu Qing He">
+                </div>
+                <div class="profile-text" data-aos="fade-left">
+                    <h3>Education Background</h3>
+                    <div class="education-item">
+                        <h4>Cardiff University | UK</h4>
+                        <p class="degree">M.Sc. in International Planning and Urban Design (MERIT)</p>
+                        <p class="period">09/2022 – 01/2023</p>
+                        <p class="modules"><strong>Relevant Modules:</strong></p>
+                        <ul class="module-list">
+                            <li>Planning City Future (Smart City; Poverty; Climate Crisis)</li>
+                            <li>Site Planning</li>
+                            <li>Site Design and Development</li>
+                            <li>Urban Design Studio</li>
+                        </ul>
+                        <p class="thesis">
+                            <strong>Thesis:</strong> Exploring the relationship between natural resources and mental health: a case study of Sheffield's informal green space.
+                            <button class="thesis-btn" onclick="openThesisModal('cardiff')">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </button>
+                        </p>
+                    </div>
+
+                    <div class="education-item">
+                        <h4>Infrastructure University Kuala Lumpur | Malaysia</h4>
+                        <p class="degree">Bachelor of Landscape Architecture (GPA: 2.98/4)</p>
+                        <p class="period">03/2017 – 07/2020</p>
+                        <p class="modules"><strong>Relevant Modules:</strong></p>
+                        <ul class="module-list">
+                            <li>Landscape Design Studio I-V</li>
+                            <li>Environmental Psychology</li>
+                            <li>Building Science</li>
+                            <li>Ecological Landscape</li>
+                        </ul>
+                        <p class="thesis">
+                            <strong>Thesis:</strong> In context of tropical area, Sidewalk Design Principle and Strategy in Urban Commercial District
+                        </p>
+                    </div>
+
+                    <h3>Employment</h3>
+                    <div class="employment-item">
+                        <h4>Hubei Enshi Collage | Enshi, China</h4>
+                        <p class="position">Lecturer</p>
+                        <p class="period">07/2023 – Present</p>
+                        <button class="employment-btn" onclick="openEmploymentModal('enshi')">
+                            <i class="fas fa-external-link-alt"></i> View Details
+                        </button>
+                    </div>
+
+                    <div class="employment-item">
+                        <h4>Yichang Botian Shengshi Tourism Planning and Landscape Design Research Institute Co. | Yichang, China</h4>
+                        <p class="position">Landscapes Architect</p>
+                        <p class="period">09/2020 – 07/2021</p>
+                        <button class="employment-btn" onclick="openEmploymentModal('yichang')">
+                            <i class="fas fa-external-link-alt"></i> View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-item" data-aos="fade-up">
+                    <i class="fas fa-city"></i>
+                    <div class="research-content">
+                        <h3>Public Space | Digital Engagement in Design Process (VR/AR/GIS) | Inclusive Design | Equality and Social Justice | Human Behaviour</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Research Skills</h2>
+            <div class="skills-slider">
+                <div class="skills-track">
+                    <div class="skill-category compact">
+                        <div class="skill-header">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h3>Design & Modeling</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>AutoCAD - Architectural and landscape design</li>
+                            <li>SketchUp - 3D modeling and visualization</li>
+                            <li>LUMION - 3D rendering for presentations</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category compact">
+                        <div class="skill-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming & Data Analysis</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Python - Website building and data analysis</li>
+                            <li>SPSS - Statistical analysis and interpretation</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category compact">
+                        <div class="skill-header">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3>Spatial Analysis</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>GIS - Spatial analysis and urban planning</li>
+                            <li>CiteSpace - Citation network analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category compact">
+                        <div class="skill-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Data Acquisition</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Web Crawling - Data collection</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Publications</h2>
+            <div class="publications-list">
+                <div class="publication-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Data-driven design for enhancing cultural tourism experiences and innovating IP in ethnic regions</h3>
+                    <p class="publication-meta">He, Y. Q. (2024)</p>
+                    <p class="publication-journal">China Packaging, ISSN 1003-062X</p>
+                    <button class="publication-btn" onclick="openPublicationModal('cultural')">
+                        <i class="fas fa-external-link-alt"></i> View Abstract
+                    </button>
+                </div>
+                
+                <div class="publication-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Reform pathways for learning assessment in applied undergraduate education in the context of artificial intelligence technologies</h3>
+                    <p class="publication-meta">He, Y. Q. (2024)</p>
+                    <p class="publication-journal">Progress, ISSN 1002-1221</p>
+                    <button class="publication-btn" onclick="openPublicationModal('education')">
+                        <i class="fas fa-external-link-alt"></i> View Keywords
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Modal -->
+    <div id="publicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="culturalPublication" class="publication-content">
+                <h2>Data-driven design for enhancing cultural tourism experiences and innovating IP in ethnic regions</h2>
+                <div class="publication-abstract">
+                    <p>This study intend to justified that innovative IP design can enhance visitor satisfaction in the cultural tourism market. A unique aspect of the research is its data-driven approach to creating tourism products that align with visitors' emotional responses, accommodating the cultural characteristics of heritage and visitor expectations.</p>
+                    
+                    <p>The methodology applies Python for text mining and sentiment analysis on online travel reviews, using Term Frequency-Inverse Document Frequency (TF-IDF) to identify key emotional responses. Findings reveal that visitor emotions are complex and influenced by factors such as IP imagery design, authenticity of cultural representation, and service experience, with strong appreciation expressed for immersive and authentic experiences.</p>
+                    
+                    <p>By leveraging technology and emotional insights, tourism developers can offer more engaging and culturally enriched experiences.</p>
+
+                    <div class="keywords">
+                        <h4>Keywords:</h4>
+                        <p>Ethnic Cultural Tourism, Sentiment Analysis, Intellectual Property, Data-driven Design</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="educationPublication" class="publication-content">
+                <h2>Reform pathways for learning assessment in applied undergraduate education in the context of artificial intelligence technologies</h2>
+                <div class="publication-abstract">
+                    <div class="keywords">
+                        <h4>Keywords:</h4>
+                        <p>Education assessment reform, Artificial intelligence, Applied undergraduate education, Competency-based assessment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            
+            <!-- Research Projects -->
+            <div class="project-category" data-aos="fade-up">
+                <h3 class="category-title"><i class="fas fa-flask"></i> Researching</h3>
+                <div class="projects-list">
+                    <div class="project-item" data-aos="fade-up">
+                        <h4>Leveraging AR/VR Technologies in Advancing Urban Digital Transformation</h4>
+                        <div class="project-meta">
+                            <span class="status">On going</span>
+                            <span class="period">2024.9 - 2025.9</span>
+                        </div>
+                        <p class="funding">Funded by: Hubei Enshi Collage</p>
+                        <button class="project-btn" onclick="openProjectModal('ar-vr')">
+                            <i class="fas fa-external-link-alt"></i> View Introduction
+                        </button>
+                    </div>
+
+                    <div class="project-item" data-aos="fade-up">
+                        <h4>From Hangzhou to Enshi: Community Engagement and Inclusive Benefit Allocation in Tourism-Led Revitalization of Revolutionary Areas</h4>
+                        <div class="project-meta">
+                            <span class="period">2024.4 - 2024.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teaching Projects -->
+            <div class="project-category" data-aos="fade-up">
+                <h3 class="category-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h3>
+                <div class="projects-list">
+                    <div class="project-item" data-aos="fade-up">
+                        <h4>Reforming Teaching Methods for a Diversified Approach in Fundamentals of Architecture and Design</h4>
+                        <div class="project-meta">
+                            <span class="period">2023.09 - 2024.09</span>
+                        </div>
+                        <p class="funding">Funded by: Hubei Enshi Collage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="arVrProject" class="project-content">
+                <h2>Leveraging AR/VR Technologies in Advancing Urban Digital Transformation</h2>
+                <div class="project-details">
+                    <p>The research mainly explores the application of Augmented Reality (AR) and Virtual Reality (VR) technologies in urban planning and their impact on public participation willingness and feedback effectiveness. By integrating AR/VR technologies into specific decision-making stages of urban planning, this study aims to enhance public understanding and participation in complex urban planning concepts.</p>
+                    
+                    <p>The research design revolves around several key scientific questions:</p>
+                    <ul>
+                        <li>First, the research team focuses on how AR/VR technologies can help the public better understand urban planning proposals, especially how these technologies improve spatial perception through 3D visualization.</li>
+                        
+                        <li>Secondly, the research examines whether public willingness to participate in urban planning activities increases after experiencing AR/VR technology, and whether this technology makes them more actively engaged in urban planning discussions and decisions.</li>
+                        
+                        <li>In addition, the study evaluates the impact of technological intervention on decision quality, exploring whether the use of AR/VR technologies improves the quality of public feedback and contributes to the formulation of high-quality urban planning decisions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="tourismProject" class="project-content">
+                <h2>From Hangzhou to Enshi: Community Engagement and Inclusive Benefit Allocation</h2>
+                <div class="project-details">
+                    <!-- Content will be added later -->
+                </div>
+            </div>
+
+            <div id="teachingProject" class="project-content">
+                <h2>Reforming Teaching Methods for Architecture and Design</h2>
+                <div class="project-details">
+                    <!-- Content will be added later -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Thank you for visiting my website. Feel free to contact me for more information.</p>
+            <div class="contact-info">
+                <a href="mailto:15671052502@163.com" class="email-link">
+                    <i class="fas fa-envelope"></i>
+                    15671052502@163.com
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Back to Top</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">© 2024 Yu Qing He. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Modal -->
+    <div id="thesisModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="cardiffThesis" class="thesis-content">
+                <h2>Master's Thesis</h2>
+                <h3>Exploring the relationship between natural resources and mental health: a case study of Sheffield's informal green space</h3>
+                
+                <section class="thesis-section">
+                    <div class="research-overview">
+                        <h4>Research Goal</h4>
+                        <p>Green space, as an environmental resource, can contribute to mental health has been well justified. But at the same time the adverse effects of green space gentrification are threatening environmental equality. In order to alleviate the unequal distribution of green space resources, informal green spaces are being looked at because of their high accessibility and low maintenance costs. The aim of this research is to explore whether informal green spaces, like formal green spaces, also contribute to mental health.</p>
+
+                        <h4>Research Questions</h4>
+                        <p>Could informal green space be a complement to formal green space to provide support for mental health? To what extent can it be seen as a potential health resource?</p>
+
+                        <h4>Methodology</h4>
+                        <p>Quantitative and qualitative research approach were adopted to clarify the relationship between informal green spaces and mental health. The demographic and behaviour date was got from "Improving Well-being through Urban Nature" project conducted by Derby University. The study's main challenge lies in distinguishing formal and informal green spaces on geographic information maps. To achieve this, green space data from the Digimap Ordnance Survey (OS MasterMap), which includes details on facilities and vegetation types within green areas, was utilized. The resulting green space boundaries were then overlaid with real-time geofencing data from participants, providing insights into the behaviors of users in both formal and informal green spaces.</p>
+
+                        <h4>Results</h4>
+                        <p>The results found no significant correlation between the type of green space used (formal or informal) and the mental health status of the participants. This suggested that the evidence for informal green spaces as a health resource is not yet sufficient. However, the statistical analysis did reveal correlations between age, childhood exposure to nature, access to private gardens, and positive emotional outcomes. This highlights a promising direction for research and investment in informal green spaces, specifically examining how different age groups engage with these areas.</p>
+
+                        <h4>Limitation</h4>
+                        <p>This result may also be due to limitations in accurately distinguishing between formal and informal green spaces. Future research could address this by incorporating field observations to refine area classifications further.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div id="malaysiaThesis" class="thesis-content">
+                <h2>Bachelor's Thesis</h2>
+                <h3>Sidewalk Design Principle and Strategy in Urban Commercial District</h3>
+                
+                <section class="thesis-section">
+                    <h4>Research Methods</h4>
+                    <ul>
+                        <li>Site Analysis</li>
+                        <li>User Behavior Studies</li>
+                        <li>Case Studies</li>
+                        <li>Design Implementation</li>
+                    </ul>
+                </section>
+
+                <section class="thesis-section">
+                    <h4>Key Findings</h4>
+                    <!-- Add your research findings here -->
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employment Modal -->
+    <div id="employmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="enshiEmployment" class="employment-content">
+                <h2>Lecturer</h2>
+                <h3>Hubei Enshi Collage</h3>
+                
+                <section class="employment-section">
+                    <h4>Teaching Responsibilities</h4>
+                    <ul class="employment-list">
+                        <li>Develop and taught courses in:</li>
+                        <ul>
+                            <li>Preliminary Architecture</li>
+                            <li>Design Fundamentals</li>
+                            <li>Architectural Design</li>
+                            <li>Art Appreciation</li>
+                            <li>3D Modelling</li>
+                        </ul>
+                        <li>Enhancing student understanding of key design concepts</li>
+                        <li>Lead hands-on workshops in 3D Modelling</li>
+                        <li>Helping students create professional architectural models</li>
+                        <li>Contributing to a 20% increase in departmental showcase awards</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="yichangEmployment" class="employment-content">
+                <h2>Landscapes Architect</h2>
+                <h3>Yichang Botian Shengshi Tourism Planning and Design Institute</h3>
+                
+                <section class="employment-section">
+                    <h4>Responsibilities</h4>
+                    <ul class="employment-list">
+                        <li>Led design and implementation of multiple "Beautiful Countryside" planning projects to promote urban-rural integration and common prosperity in Yichang.</li>
+                        <li>Conducted market research by analyzing annual reports, engaging with government officials and developers, and synthesizing data into detailed reports to guide planning decisions.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
